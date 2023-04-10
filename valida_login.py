@@ -42,6 +42,14 @@ def valSen(sen):
     else: 
         return True
 
+def valMsg(msg):
+    if len(msg) > 70:
+        print('A mensagem deve conter menos de 70 caractéres')
+        return False
+    
+    else: 
+        return True
+
     
     
 

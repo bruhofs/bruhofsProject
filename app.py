@@ -13,7 +13,11 @@ while not brk:
     sen = input('Digite sua senha --> ')
     brk = valSen(sen)
 
-msg = input('Digite a mensagem --> ')
+brk = False
+
+while not brk:
+    msg = input('Digite a mensagem --> ')
+    brk = valMsg(msg)
 
 encryptedText = encryptMessage(use,sen,msg)
 saveNewLine(encryptedText)
